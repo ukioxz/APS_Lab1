@@ -4,12 +4,12 @@ import ("fmt"
         "net/http"
         )
 
-func home_page(w http.ResponseWriter, r *http.Request) {
+func time_request(w http.ResponseWriter, r *http.Request) {
   fmt.Fprintf(w, "Hello world!")
 }
 
 func handleRequest() {
-  http.HandleFunc("/time", home_page)
+  http.HandleFunc("/time", time_request)
   http.ListenAndServe(":8795", nil)
 }
 
