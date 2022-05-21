@@ -4,6 +4,7 @@ import (
         "net/http"
 				"time"
         "encoding/json"
+        "fmt"
         )
 
 func time_request(w http.ResponseWriter, r *http.Request) {
@@ -11,8 +12,8 @@ func time_request(w http.ResponseWriter, r *http.Request) {
 	currentTime := time.Now().Format(time.RFC3339);
   resp := make(map[string]string);
 	resp["time"] = currentTime;
+  fmt.Fprintf(w, "It's current time!");
   json.NewEncoder(w).Encode(resp);
-
 }
 
 func handleRequest() {
