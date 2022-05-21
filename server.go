@@ -9,10 +9,10 @@ func home_page(w http.ResponseWriter, r *http.Request) {
 }
 
 func handleRequest() {
-  http.HandleFunc("/", home_page)
+  http.HandleFunc("/time", home_page)
   http.ListenAndServe(":8795", nil)
 }
 
 func main() {
-  handleRequest()
+  handleRequest();
 }
