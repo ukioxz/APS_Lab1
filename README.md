@@ -6,4 +6,3 @@
 * Anastasia Sanina
 * Vasilieva Marina
 * Sedush Mykhaylo
-* Petro Mostavchuk
