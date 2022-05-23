@@ -17,7 +17,7 @@ func time_request(w http.ResponseWriter, r *http.Request) {
   json.NewEncoder(w).Encode(resp);
 }
 
-func handleRequest() {
+func handle_request() {
   http.HandleFunc("/time", time_request);
   http.ListenAndServe(":8795", nil);
 }
