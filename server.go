@@ -23,5 +23,5 @@ func handle_request() {
 }
 
 func main() {
-	handleRequest()
+	handle_request()
 }
